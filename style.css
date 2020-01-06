@@ -1,5 +1,6 @@
 html {
     font-size: 12px;
+    font-family: 'Raleway';
 }
 
 a:hover {
@@ -8,6 +9,7 @@ a:hover {
 
 body {
     margin: none;
+    min-width: 1100px;
 }
 
 header {
@@ -16,7 +18,11 @@ header {
     align-items: center;
     justify-content: space-between;
 
+    color: white;
+    height: 740px;
+
     background-image: url('img/header_bg.png');
+    background-size: 115%;
 }
 
 nav {
@@ -25,7 +31,80 @@ nav {
 
     align-self: stretch;
 
-    margin: 35px;
+    margin: 0 20px;
     border-bottom: 1px solid grey;
-    padding: 0 250px;
+    padding: 0 156px;
+}
+
+nav img {
+    align-self: center;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav ul {
+    display: flex;
+
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+nav > ul {
+    padding-top: 40px;
+}
+
+.nav-but > li > * {
+    color: inherit;
+    font-size: 1.25rem;
+    white-space: nowrap;
+    padding: 40px 23px;
+}
+
+.nav-but > li:last-child > * {
+    padding-right: 0;
+}
+
+.nav-but > li:first-child > * {
+    padding-left: 0;
+}
+
+.nav-but > li > ul {
+    padding-top: 0;
+}
+
+.social a {
+    padding: 11px;
+}
+
+.social li:last-child a {
+    padding-right: 0;
+}
+
+.social li:first-child a {
+    padding-left: 0;
+}
+
+.social img {
+    height: 14px;
+}
+
+.nav-logo {
+    width: 64px;
+    margin-top: -8px;
+}
+
+h1 {
+    font-size: 11.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.74em;
+    color: #11749e;
 }
