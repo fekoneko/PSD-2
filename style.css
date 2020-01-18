@@ -129,3 +129,39 @@ h2 {
 .scroll-down {
     width: 56px;
 }
+
+section {
+    padding: 60px;
+}
+
+.blue-section {
+    background-color: #11749e;
+    color: white;
+}
+
+.section-h {
+    position: relative;
+    margin: 6rem 0;
+}
+
+.section-h h1 {
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.section-h::before {
+    content: 'W';
+    font-size: 15rem;
+    font-weight: bold;
+    text-align: center;
+    opacity: .18;
+    width: 100%;
+    line-height: 15rem;
+
+    position: absolute;
+    left: 0;
+    top: calc(-7.5rem + 50%);
+}
