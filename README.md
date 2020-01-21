@@ -7,7 +7,7 @@
     <i>Сайт с этим макетом:</i><br>
  </dt>
   <dd>
-    <code><a target="_blank" href="https://andrewlance.github.io/PSD-2">AndrewLance.GitHub.io/PSD-1</a></code><br>
+    <code><a target="_blank" href="https://andrewlance.github.io/PSD-2">AndrewLance.GitHub.io/PSD-2</a></code><br>
   </dd>
   <dt>
     <i>Моё портфолио:</i><br>
