@@ -135,6 +135,14 @@ section {
     color: white;
 }
 
+.white-section {
+    color: #222;
+}
+
+.white-section figcaption {
+    color: #11749e;
+}
+
 .section-h {
     position: relative;
     margin: 6rem 0;
@@ -148,8 +156,15 @@ section {
     text-align: center;
 }
 
-.section-h::before {
+.letter-w::before {
     content: 'W';
+}
+
+.letter-b::before {
+    content: 'B';
+}
+
+.section-h::before {
     font-size: 15rem;
     font-weight: bold;
     text-align: center;
@@ -237,4 +252,27 @@ h2 {
 
 .bg-2 {
     background-image: url('img/img_block2.jpg');
+}
+
+.blog-picture {
+    width: calc(100% - 10px);
+    margin-bottom: 20px;
+}
+
+.section-description-p {
+    font-size: 2.2rem;
+    letter-spacing: .07rem;
+    text-align: center;
+}
+
+.little-margin {
+    margin-top: 50px;
+}
+
+.little-padding {
+    padding: 4px;
+}
+
+.fig-w25 > figure {
+    width: 25%;
 }
