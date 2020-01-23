@@ -276,3 +276,11 @@ h2 {
 .fig-w25 > figure {
     width: 25%;
 }
+
+.smaller-margin {
+    margin-top: 16px;
+}
+
+.feature-picture-small {
+    width: 60px;
+}
