@@ -254,6 +254,15 @@ h2 {
     background-image: url('img/img_block2.jpg');
 }
 
+.bg-3 {
+    background-image: url('img/app_section_bg.jpg');
+}
+
+.bg-110 {
+    background-position: center;
+    background-size: 110%;
+}
+
 .blog-picture {
     width: calc(100% - 10px);
     margin-bottom: 20px;
@@ -280,6 +289,7 @@ h2 {
 
 .smaller-margin {
     margin-top: 16px;
+    margin-bottom: 60px;
 }
 
 .feature-picture-small {
@@ -290,4 +300,45 @@ h2 {
 
 .align-left {
     text-align: left;
+}
+
+.app-img {
+    width: 330px;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.margin-b {
+    margin-bottom: 20px;
+}
+
+.big-margin-b {
+    margin-bottom: 60px;
+}
+
+.app-feature {
+    display: block;
+
+    margin-top: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    color: white;
+    padding: 5px 14px;
+    width: 370px;
+    background-color: #11749e;
+}
+
+.width-1 {
+    width: 300px;
+}
+
+.width-2 {
+    width: 330px;
+}
+
+.width-3 {
+    width: 360px;
 }
