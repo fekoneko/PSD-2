@@ -164,6 +164,10 @@ section {
     content: 'B';
 }
 
+.letter-t::before {
+    content: 'T';
+}
+
 .section-h::before {
     font-size: 15rem;
     font-weight: bold;
@@ -186,6 +190,8 @@ section {
 }
 
 figure {
+    position: relative;
+
     text-align: center;
     padding: 16px;
     margin-bottom: 0;
@@ -263,7 +269,8 @@ h2 {
     background-size: 110%;
 }
 
-.blog-picture {
+.blog-picture,
+.team-picture {
     width: calc(100% - 10px);
     margin-bottom: 20px;
 }
@@ -341,4 +348,26 @@ h2 {
 
 .width-3 {
     width: 360px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.pic-card {
+    width: 180px;
+    background-color: white;
+
+    position: absolute;
+    bottom: 5px;
+    left: calc(50% - 90px)
+}
+
+.pic-card figcaption {
+    margin-bottom: 0;
+}
+
+.padding-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
