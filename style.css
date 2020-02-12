@@ -17,7 +17,7 @@ a:hover {
 
 body {
     margin: 0;
-    min-width: 1100px;
+    min-width: 1200px;
 }
 
 header,
@@ -36,6 +36,7 @@ header {
 
     background-image: url('img/header_bg.png');
     background-size: 115%;
+    background-attachment: fixed;
 }
 
 nav {
@@ -75,13 +76,41 @@ nav > ul {
     padding: 40px 23px;
 }
 
-.nav-but > li:last-child > *,
+.nav-but > li {
+    position: relative;
+}
+
+.nav-but > li > a::after {
+    display: block;
+
+    width: 100%;
+    height: 0;
+    content: "";
+    background-color: #11749e;
+    transition: height .2s ease-in-out;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.nav-but > li > a:hover:after {
+    height: 6px;
+}
+
+.nav-but > li:last-child {
+    margin-right: -23px;
+}
+
+.nav-but > li:first-child {
+    margin-left: -23px;
+}
+
 .social li:last-child a,
 .figure-container:last-child {
     padding-right: 0;
 }
 
-.nav-but > li:first-child > *,
 .social li:first-child a,
 .figure-container:first-child {
     padding-left: 0;
@@ -97,6 +126,13 @@ nav > ul {
 
 .social img {
     height: 14px;
+    opacity: 1;
+    transition: opacity .15s linear;
+}
+
+.social a:hover img {
+    height: 14px;
+    opacity: .5;
 }
 
 .nav-logo {
@@ -120,6 +156,26 @@ h1 {
 
 .header-h {
     margin-top: 100px;
+}
+
+.scroll-container {
+    box-sizing: content-box;
+
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    opacity: 1;
+    color: white;
+    transition: margin-bottom .5s ease-in-out,
+        padding-top .5s ease-in-out,
+        opacity .5s ease-in-out;
+}
+
+.scroll-container:hover {
+    margin-bottom: -20px;
+    padding-top: 20px;
+    opacity: .5;
+    color: white;
 }
 
 .scroll-down {
@@ -419,12 +475,19 @@ button {
     font-weight: bold;
     font-size: 1.7rem;
     padding: 12px 58px;
+    transition: background-color .15s linear,
+        color .15s linear;
 
     margin: 0 auto;
 }
 
+button:hover {
+    background-color: #0e5b7c;
+    color: #e7e7e7;
+}
+
 input {
-    width: 320px;
+    width: 31%;
     height: 40px;
 
     font-size: 1.2rem;
